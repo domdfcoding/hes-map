@@ -82,7 +82,7 @@ MARINE_PROTECTED_AREAS = Dataset(
 		noun="Historic Marine Protected Area",
 		icon=FontawesomeLayerIcon(icon="anchor", marker_colour="purple", svg_marker=True),
 		geojson_filename="Marine Protected Areas.geojson",
-		# polygonal=True,
+		polygonal=True,
 		)
 
 SCHEDULED_MONUMENTS = Dataset(

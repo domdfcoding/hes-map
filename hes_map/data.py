@@ -30,10 +30,12 @@ Data preparation.
 import datetime
 import re
 import xml.etree.ElementTree
+import zipfile
 from typing import Any, NamedTuple, TypedDict
 from xml.etree.ElementPath import findtext
 
 # 3rd party
+import pycrs
 import requests
 import shapefile  # type: ignore[import-untyped]
 from domdf_python_tools.paths import PathPlus
@@ -44,7 +46,6 @@ from pyproj import CRS, Transformer
 from hes_map import constants
 
 __all__ = ["download_data"]
-
 
 input_projection = CRS("epsg:27700")
 output_projection = CRS("epsg:4326")
@@ -110,6 +111,10 @@ def download_data(output_directory: PathLike) -> dict[str, Any]:
 		zip_filename.write_bytes(resp.content)
 		sf = shapefile.Reader((zip_filename / SHAPEFILES[layer.identifier].shp_filename).as_posix())
 
+		with zipfile.ZipFile(zip_filename, 'r') as archive:
+			wkt = archive.read(SHAPEFILES[layer.identifier].shp_filename.replace(".shp", ".prj"))
+			crs = pycrs.parse.from_esri_wkt(wkt.decode("UTF-8")).name
+
 		layer_atom_data: AtomData = atom_data.get(
 				layer.name,
 				{"title": '', "summary": '', "updated": datetime.datetime.now()},
@@ -150,6 +155,10 @@ def download_data(output_directory: PathLike) -> dict[str, Any]:
 				else:
 					feature["DES_TITLE"] = feature["DES_TITLE"].replace(" World Heritage Site Boundary", '')
 					# TODO: clean up polygon for the Antonine Wall, Orkney and Flow Country - all multipolygons
+			elif feature["DES_TYPE"] == "Historic Marine Protected Area":
+				feature["DES_TITLE"] = feature["DES_TITLE"].replace("Historic Mpa", '')
+				feature["DES_TITLE"] = feature["DES_TITLE"].replace(" Mpa", '')
+				# TODO: merge multiple entries with same ID together as multipolygon. Might be needed for some other types too
 
 			assert feature["DES_TYPE"] == layer.noun, (feature["DES_TYPE"], layer.noun)
 
@@ -167,10 +176,14 @@ def download_data(output_directory: PathLike) -> dict[str, Any]:
 
 			if layer.polygonal:
 				assert shape.shapeTypeName == "POLYGON"
-				# breakpoint()
 
 				assert len(shape.points)
-				polygon = [transform(lat, lng)[::-1] for (lat, lng) in shape.points]  # TODO: flip lat lng and not output
+				if crs == "GCS_WGS_1984":
+					polygon = [(lng, lat) for (lng, lat) in shape.points]
+				else:
+					# TODO: flip lat lng and not output
+					polygon = [transform(lat, lng)[::-1] for (lat, lng) in shape.points]
+
 				polygon.append(polygon[0])
 
 				geojson["features"].append({
@@ -181,9 +194,12 @@ def download_data(output_directory: PathLike) -> dict[str, Any]:
 						"properties": feature_properties,
 						})
 
-			else:				
+			else:
 				if "LON" in feature:
+					assert crs == "GCS_WGS_1984"
 					lat, lng = feature["LAT"], feature["LON"]
+				elif crs == "GCS_WGS_1984":
+					lat, lng = feature['X'], feature['Y']
 				else:
 					lat, lng = transform(feature['X'], feature['Y'])
 
