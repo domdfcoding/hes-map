@@ -98,14 +98,14 @@ WORLD_HERITAGE_SITES = Dataset(
 		geojson_filename="World Heritage Sites.geojson",
 		)
 
-LAYERS = (
+LAYERS = [
 		BATTLEFIELDS,
 		LISTED_BUILDINGS,
 		PARKS_AND_GARDENS,
 		MARINE_PROTECTED_AREAS,
 		SCHEDULED_MONUMENTS,
 		WORLD_HERITAGE_SITES,
-		)
+		]
 
 MIN_LAT = 54
 MIN_LNG = -8
