@@ -26,13 +26,15 @@ Data preparation.
 #  OR OTHER DEALINGS IN THE SOFTWARE.
 #
 
+import re
+import xml.etree.ElementTree
 # stdlib
 import datetime
-from typing import Any, NamedTuple
+from typing import Any, NamedTuple, TypedDict
 
 # 3rd party
 import requests
-import shapefile
+import shapefile  # type: ignore[import-untyped]
 from domdf_python_tools.paths import PathPlus
 from domdf_python_tools.typing import PathLike
 from pyproj import CRS, Transformer
@@ -41,6 +43,8 @@ from pyproj import CRS, Transformer
 from hes_map import constants
 
 __all__ = ["download_data"]
+
+# TODO: hide World Heritage Site buffer zones (and remove Site Boundary from other)
 
 input_projection = CRS("epsg:27700")
 output_projection = CRS("epsg:4326")
@@ -97,18 +101,21 @@ def download_data(output_directory: PathLike) -> dict[str, Any]:
 			"layers": [],
 			}
 
+	atom_data = parse_atom_data()
+
 	for layer in constants.LAYERS:
 		download_url = SHAPEFILES[layer.identifier].download_url
 		resp = requests.get(download_url)
 		zip_filename = output_dir / f"{layer.identifier}.zip"
 		zip_filename.write_bytes(resp.content)
 		sf = shapefile.Reader((zip_filename / SHAPEFILES[layer.identifier].shp_filename).as_posix())
-		created_at = datetime.datetime.now()  # TODO
 
-		# TODO: get description from e.g. https://inspire.hes.scot/arcgis/services/HES/World_Heritage_Sites/MapServer/WFSServer?request=GetCapabilities&service=WFS
+		layer_atom_data = atom_data.get(layer.name, {"summary": '', "updated": datetime.datetime.now()})
+		description = layer_atom_data["summary"]
+		created_at = layer_atom_data["updated"]
 		meta["layers"].append({
 				"name": layer.geojson_filename_stem,
-				"description": '',
+				"description": description,
 				"copyrightText": '',  # TODO
 				"editingInfo": {
 						"dataLastEditDate": created_at.timestamp() * 1000,
@@ -169,3 +176,53 @@ def download_data(output_directory: PathLike) -> dict[str, Any]:
 
 	output_dir.joinpath("meta.json").dump_json(meta, indent=2)
 	return meta
+
+
+
+def _process_atom_title(title: str) -> str:
+	title = title.replace("Historic Environment Scotland - ", "")
+	title = title.replace(" (INSPIRE pre-defined download service)", "")
+	title = title.replace(" Inventory Boundary", "")
+	return title.strip()
+
+def _process_atom_summary(summary: str) -> str:
+	summary = summary.split("Shapefile file download")[0]
+	summary = re.sub("<!--(.*)-->", '', summary, flags=re.DOTALL)
+	summary = summary.replace("<div>", "")
+	summary = summary.replace("</div>", "")
+	summary = re.sub("\n\s+", "\n", summary, flags=re.DOTALL)
+	summary = summary.replace("<div><br/><div>", '')
+	summary = summary.replace("â", '"')
+	summary = summary.replace("\u0080\u0098", '')
+	summary = summary.replace("\u0080\u0099", '')
+	summary = summary.rstrip().removesuffix("<br/>")
+	return summary.strip()
+
+
+_ATOM_NS = "{http://www.w3.org/2005/Atom}"
+
+class AtomData(TypedDict):
+	title: str
+	updated: datetime.datetime
+	summary: str
+
+def parse_atom_data() -> dict[str, AtomData]:  # TODO: TypedDict
+	resp = requests.get("https://inspire.hes.scot/AtomService/HES_AtomService.atom.en.xml")
+	resp.raise_for_status()
+	root = xml.etree.ElementTree.fromstring(resp.text)
+	
+	data = []
+
+	for entry in root.iter(_ATOM_NS + "entry"):
+		title = _process_atom_title(entry.find(_ATOM_NS + "title").text)
+		# updated = datetime.datetime.combine(entry.find(_ATOM_NS + "updated").text, datetime.time.min)
+		updated = datetime.datetime.fromisoformat(entry.find(_ATOM_NS + "updated").text)
+		summary = _process_atom_summary(entry.find(_ATOM_NS + "summary").text)
+		data.append({
+			"title": title,
+			"updated": updated,
+			"summary": summary,
+		})
+
+	return {e["title"]: e for e in data}
+
