@@ -53756,5 +53756,4 @@ var scheduledMonuments114607204 = [
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
 var worldHeritageSites114607204 = [
-[56.0004006766, -3.3885522737, "WH6", "Forth Bridge World Heritage Site Boundary", null, "Sat, 04 Jul 2015", "https://www.historicenvironment.scot/advice-and-support/listing-scheduling-and-designations/world-heritage-sites/forth-bridge/"],
 ]

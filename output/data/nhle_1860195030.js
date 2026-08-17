@@ -2642,6 +2642,4 @@ var scheduledMonuments1860195030 = [
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
 var worldHeritageSites1860195030 = [
-[59.0009339631, -3.2272805829, "WH4", "Heart of Neolithic Orkney World Heritage Site Boundary", null, "Wed, 19 Sep 2001", "https://www.historicenvironment.scot/advice-and-support/listing-scheduling-and-designations/world-heritage-sites/heart-of-neolithic-orkney/"],
-[59.0139538759, -3.2482756149, "WHB4MP2", "Heart of Neolithic Orkney World Heritage Site Buffer Zone", null, "Tue, 30 Sep 2008", "https://www.historicenvironment.scot/advice-and-support/listing-scheduling-and-designations/world-heritage-sites/heart-of-neolithic-orkney/"],
 ]

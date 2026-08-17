@@ -102,7 +102,7 @@ WORLD_HERITAGE_SITES = Dataset(
 		noun="World Heritage Site",
 		icon=FontawesomeLayerIcon(icon="certificate", marker_colour="grey", svg_marker=True),
 		geojson_filename="World Heritage Sites.geojson",
-		# polygonal=True,
+		polygonal=True,
 		)
 
 LAYERS = [

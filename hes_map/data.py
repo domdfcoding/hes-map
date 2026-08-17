@@ -45,7 +45,6 @@ from hes_map import constants
 
 __all__ = ["download_data"]
 
-# TODO: hide World Heritage Site buffer zones (and remove Site Boundary from other)
 
 input_projection = CRS("epsg:27700")
 output_projection = CRS("epsg:4326")
@@ -146,6 +145,11 @@ def download_data(output_directory: PathLike) -> dict[str, Any]:
 
 			if feature["DES_TYPE"] == "WORLD HERITAGE SITE":
 				feature["DES_TYPE"] = feature["DES_TYPE"].title()
+				if "buffer zone" in feature["DES_TITLE"].lower():
+					continue
+				else:
+					feature["DES_TITLE"] = feature["DES_TITLE"].replace(" World Heritage Site Boundary", '')
+					# TODO: clean up polygon for the Antonine Wall, Orkney and Flow Country - all multipolygons
 
 			assert feature["DES_TYPE"] == layer.noun, (feature["DES_TYPE"], layer.noun)
 
