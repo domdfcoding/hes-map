@@ -973,7 +973,7 @@ var listedBuildings2606292287 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens2606292287 = [
+var gardensLandscapes2606292287 = [
 [58.6468953369, -3.2228407284, "GDL00096", "Castle of Mey (Barrogill Castle)", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00096"],
 [58.2376500205, -3.439510952, "GDL00150", "Dunbeath Castle", null, "Sun, 30 Mar 2003", "https://portal.historicenvironment.scot/designation/GDL00150"],
 [58.7856679668, -3.2614868367, "GDL00281", "Melsetter House", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00281"],

@@ -477,7 +477,7 @@ var listedBuildings3524924329 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens3524924329 = [
+var gardensLandscapes3524924329 = [
 [57.6389509477, -1.94107954, "GDL00396", "Cairness", null, "Wed, 29 Jun 2011", "https://portal.historicenvironment.scot/designation/GDL00396"],
 [57.6163862498, -1.9387390048, "GDL00397", "Crimonmogate", null, "Wed, 29 Jun 2011", "https://portal.historicenvironment.scot/designation/GDL00397"],
 ]

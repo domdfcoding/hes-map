@@ -15,7 +15,7 @@ var listedBuildings3632567315 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens3632567315 = [
+var gardensLandscapes3632567315 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,

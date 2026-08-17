@@ -15805,7 +15805,7 @@ var listedBuildings2784490156 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens2784490156 = [
+var gardensLandscapes2784490156 = [
 [55.8323508984, -3.0710967643, "GDL00029", "Arniston", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00029"],
 [55.9924304747, -3.7694573058, "GDL00078", "Callendar Park", null, "Fri, 30 Mar 2007", "https://portal.historicenvironment.scot/designation/GDL00078"],
 [55.95630583, -3.3225843812, "GDL00081", "Cammo", null, "Fri, 30 Mar 2001", "https://portal.historicenvironment.scot/designation/GDL00081"],

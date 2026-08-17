@@ -169,7 +169,7 @@ var listedBuildings1336483256 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens1336483256 = [
+var gardensLandscapes1336483256 = [
 [56.0925129171, -6.186460461, "GDL00106", "Colonsay House", null, "Fri, 30 Mar 2007", "https://portal.historicenvironment.scot/designation/GDL00106"],
 ]
 

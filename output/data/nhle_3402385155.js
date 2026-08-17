@@ -2099,7 +2099,7 @@ var listedBuildings3402385155 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens3402385155 = [
+var gardensLandscapes3402385155 = [
 [57.2747079518, -3.6368219805, "GDL00032", "Aultmore", null, "Sun, 30 Mar 2003", "https://portal.historicenvironment.scot/designation/GDL00032"],
 [57.0337201119, -3.2300121134, "GDL00045", "Balmoral Castle", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00045"],
 [57.5975118029, -3.7097859174, "GDL00072", "Brodie Castle", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00072"],

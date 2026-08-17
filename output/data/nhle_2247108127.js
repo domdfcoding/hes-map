@@ -5681,7 +5681,7 @@ var listedBuildings2247108127 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens2247108127 = [
+var gardensLandscapes2247108127 = [
 [57.2621953861, -2.6292305557, "GDL00090", "Castle Forbes", null, "Thu, 30 Mar 2006", "https://portal.historicenvironment.scot/designation/GDL00090"],
 [57.2050803804, -2.4594562762, "GDL00091", "Castle Fraser", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00091"],
 [57.2026428129, -2.5157666227, "GDL00103", "Cluny Castle", null, "Thu, 30 Mar 2006", "https://portal.historicenvironment.scot/designation/GDL00103"],

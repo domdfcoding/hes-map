@@ -6,7 +6,7 @@ var listedBuildingsIcon = L.ExtraMarkers.icon(
 	{"icon": "fa-building", "markerColor": "#006fb2", "prefix": "fa", "svg": true}
 );
 
-var parksGardensIcon = L.ExtraMarkers.icon(
+var gardensLandscapesIcon = L.ExtraMarkers.icon(
 	{"icon": "fa-tree", "markerColor": "green", "prefix": "fa", "svg": false}
 );
 
@@ -37,9 +37,9 @@ const layerData = [
         "noun": "Listed Building",
     },
     {
-        "variable_prefix": "parksGardens",
-        "layer": "marker_cluster_parks_and_gardens",
-        "icon": parksGardensIcon,
+        "variable_prefix": "gardensLandscapes",
+        "layer": "marker_cluster_gardens_landscapes",
+        "icon": gardensLandscapesIcon,
         "noun": "Garden and Designed Landscape",
     },
     {

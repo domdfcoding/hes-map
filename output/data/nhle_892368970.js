@@ -410,7 +410,7 @@ var listedBuildings892368970 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens892368970 = [
+var gardensLandscapes892368970 = [
 [60.1604709171, -1.1187780739, "GDL00186", "Gardie House", null, "Sun, 30 Mar 2003", "https://portal.historicenvironment.scot/designation/GDL00186"],
 [60.4047377574, -1.1171209357, "GDL00271", "Lunna House", null, "Sun, 30 Mar 2003", "https://portal.historicenvironment.scot/designation/GDL00271"],
 ]

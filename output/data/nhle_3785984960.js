@@ -969,7 +969,7 @@ var listedBuildings3785984960 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens3785984960 = [
+var gardensLandscapes3785984960 = [
 [56.4530003104, -5.3195376018, "GDL00007", "Achnacloich", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00007"],
 [56.2953276709, -5.6415279503, "GDL00013", "An Cala", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00013"],
 [56.3783611811, -5.1004855495, "GDL00018", "Ardanaiseig House", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00018"],

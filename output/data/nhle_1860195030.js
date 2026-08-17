@@ -62,7 +62,7 @@ var listedBuildings1860195030 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens1860195030 = [
+var gardensLandscapes1860195030 = [
 [59.0472187676, -3.3349994765, "GDL00341", "Skaill House", null, "Sun, 30 Mar 2003", "https://portal.historicenvironment.scot/designation/GDL00341"],
 ]
 

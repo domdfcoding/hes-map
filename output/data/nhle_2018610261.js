@@ -105,7 +105,7 @@ var listedBuildings2018610261 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens2018610261 = [
+var gardensLandscapes2018610261 = [
 [58.4901941214, -4.4148381818, "GDL00375", "Tongue House", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00375"],
 ]
 

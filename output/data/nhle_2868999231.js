@@ -571,7 +571,7 @@ var listedBuildings2868999231 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens2868999231 = [
+var gardensLandscapes2868999231 = [
 [54.9044843225, -3.5766484808, "GDL00015", "Arbigland", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00015"],
 [54.9243122148, -3.9449305781, "GDL00372", "Threave Gardens", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00372"],
 ]

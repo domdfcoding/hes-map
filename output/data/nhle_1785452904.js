@@ -1064,7 +1064,7 @@ var listedBuildings1785452904 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens1785452904 = [
+var gardensLandscapes1785452904 = [
 [55.666499634, -5.7497341313, "GDL00005", "Achamore House", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00005"],
 [55.9966325376, -5.3266343457, "GDL00041", "Ballimore", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00041"],
 [55.5975078191, -5.1570352278, "GDL00071", "Brodick Castle", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00071"],

@@ -184,7 +184,7 @@ var listedBuildings1862279745 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens1862279745 = [
+var gardensLandscapes1862279745 = [
 [55.7848052074, -6.25694635, "GDL00228", "Islay House", null, "Thu, 30 Mar 2006", "https://portal.historicenvironment.scot/designation/GDL00228"],
 ]
 

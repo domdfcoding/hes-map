@@ -175,7 +175,7 @@ var listedBuildings441311815 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens441311815 = [
+var gardensLandscapes441311815 = [
 [58.2100201295, -6.4025888447, "GDL00263", "Lews Castle And Lady Lever Park", null, "Sun, 30 Mar 2003", "https://portal.historicenvironment.scot/designation/GDL00263"],
 ]
 

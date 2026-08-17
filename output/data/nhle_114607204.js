@@ -9342,7 +9342,7 @@ var listedBuildings114607204 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens114607204 = [
+var gardensLandscapes114607204 = [
 [56.3762720274, -3.766097344, "GDL00002", "Abercairny", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00002"],
 [56.0538036145, -3.2967760292, "GDL00003", "Aberdour Castle", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00003"],
 [56.6560475023, -3.1550445683, "GDL00009", "Airlie Castle", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00009"],

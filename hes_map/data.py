@@ -75,7 +75,6 @@ SHAPEFILES = {
 						"https://inspire.hes.scot/AtomService/DATA/HMPA_scotland.zip",
 						"Historic_Marine_Protected_Areas.shp",
 						),
-		# constants.REGISTERED_LANDSCAPES_WALES.identifier: Shapefile(, ""),
 		constants.SCHEDULED_MONUMENTS.identifier:
 				Shapefile("https://inspire.hes.scot/AtomService/DATA/sam_scotland.zip", "Scheduled_Monuments.shp"),
 		constants.WORLD_HERITAGE_SITES.identifier:

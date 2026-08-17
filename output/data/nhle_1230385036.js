@@ -2012,7 +2012,7 @@ var listedBuildings1230385036 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens1230385036 = [
+var gardensLandscapes1230385036 = [
 [57.4024264743, -4.3251534343, "GDL00011", "Aldourie Castle", null, "Sun, 30 Mar 2003", "https://portal.historicenvironment.scot/designation/GDL00011"],
 [57.7332463186, -4.3276544965, "GDL00023", "Ardross Castle", null, "Sun, 30 Mar 2003", "https://portal.historicenvironment.scot/designation/GDL00023"],
 [57.7487565745, -4.0890094979, "GDL00046", "Balnagown Castle", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00046"],

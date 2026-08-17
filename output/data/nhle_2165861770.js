@@ -1371,7 +1371,7 @@ var listedBuildings2165861770 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens2165861770 = [
+var gardensLandscapes2165861770 = [
 [54.7755319625, -4.955523768, "GDL00026", "Ardwell House", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00026"],
 [54.837065285, -4.0550793327, "GDL00075", "Broughton House", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00075"],
 [54.8732659145, -4.1765340938, "GDL00079", "Cally", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00079"],

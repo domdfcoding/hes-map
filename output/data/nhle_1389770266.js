@@ -7180,7 +7180,7 @@ var listedBuildings1389770266 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens1389770266 = [
+var gardensLandscapes1389770266 = [
 [56.8657299534, -2.3443411268, "GDL00016", "Arbuthnott House", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00016"],
 [56.2292255909, -2.8412948828, "GDL00036", "Balcarres", null, "Wed, 30 Mar 2005", "https://portal.historicenvironment.scot/designation/GDL00036"],
 [56.2239357645, -2.7692022862, "GDL00037", "Balcaskie", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00037"],

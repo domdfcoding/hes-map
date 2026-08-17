@@ -347,7 +347,7 @@ var listedBuildings3496182034 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens3496182034 = [
+var gardensLandscapes3496182034 = [
 [57.0706689067, -5.9006957179, "GDL00028", "Armadale Castle", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00028"],
 [57.2846435343, -5.6574581399, "GDL00043", "Lochalsh Woodland Walks", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00043"],
 [57.8222324631, -5.179978132, "GDL00152", "Dundonnell", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00152"],

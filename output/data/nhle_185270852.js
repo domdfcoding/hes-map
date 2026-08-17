@@ -10615,7 +10615,7 @@ var listedBuildings185270852 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens185270852 = [
+var gardensLandscapes185270852 = [
 [55.6405963772, -4.6110277372, "GDL00014", "Annick Lodge", null, "Thu, 30 Mar 2006", "https://portal.historicenvironment.scot/designation/GDL00014"],
 [55.91785247, -4.8710064726, "GDL00021", "Ardgowan", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00021"],
 [55.477723263, -4.5465422051, "GDL00031", "Auchincruive", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00031"],

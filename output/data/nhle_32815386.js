@@ -5102,7 +5102,7 @@ var listedBuildings32815386 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens32815386 = [
+var gardensLandscapes32815386 = [
 [55.5906099208, -2.766505656, "GDL00001", "Abbotsford", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00001"],
 [55.8442055029, -2.1125579011, "GDL00033", "Ayton Castle", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00033"],
 [55.592427137, -2.65283602, "GDL00055", "Bemersyde", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00055"],

@@ -62,13 +62,13 @@ LISTED_BUILDINGS = Dataset(
 		geojson_filename="Listed Building points.geojson",
 		)
 
-PARKS_AND_GARDENS = Dataset(  # TODO: Designated Landscapes
-		variable_prefix="parksGardens",
-		identifier="parks_and_gardens",
-		name="Parks and Gardens",
+PARKS_AND_GARDENS = Dataset(
+		variable_prefix="gardensLandscapes",
+		identifier="gardens_landscapes",
+		name="Gardens and Designed Landscapes",
 		noun="Garden and Designed Landscape",
 		icon=FontawesomeLayerIcon(icon="tree", marker_colour="green"),
-		geojson_filename="Parks and Gardens.geojson",
+		geojson_filename="Gardens and Designed Landscapes.geojson",
 		)
 
 MARINE_PROTECTED_AREAS = Dataset(
@@ -97,7 +97,6 @@ WORLD_HERITAGE_SITES = Dataset(
 		icon=FontawesomeLayerIcon(icon="certificate", marker_colour="grey", svg_marker=True),
 		geojson_filename="World Heritage Sites.geojson",
 		)
-
 
 LAYERS = (
 		BATTLEFIELDS,

@@ -70,7 +70,7 @@ var listedBuildings3540753909 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens3540753909 = [
+var gardensLandscapes3540753909 = [
 [60.6873122385, -0.9702513906, "GDL00054", "Belmont House", null, "Sun, 30 Mar 2003", "https://portal.historicenvironment.scot/designation/GDL00054"],
 [60.6117957843, -0.9432287019, "GDL00074", "Brough Lodge", null, "Sun, 30 Mar 2003", "https://portal.historicenvironment.scot/designation/GDL00074"],
 ]

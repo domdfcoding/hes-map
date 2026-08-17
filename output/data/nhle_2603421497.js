@@ -184,7 +184,7 @@ var listedBuildings2603421497 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens2603421497 = [
+var gardensLandscapes2603421497 = [
 [57.4475151844, -6.5894793167, "GDL00164", "Dunvegan Castle", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00164"],
 [57.0121910154, -6.2808368971, "GDL00242", "Kinloch Castle", null, "Sun, 30 Mar 2003", "https://portal.historicenvironment.scot/designation/GDL00242"],
 [57.3564421445, -6.071807944, "GDL00321", "Raasay House", null, "Sun, 30 Mar 2003", "https://portal.historicenvironment.scot/designation/GDL00321"],

@@ -62,7 +62,7 @@ var listedBuildings1666175688 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens1666175688 = [
+var gardensLandscapes1666175688 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,

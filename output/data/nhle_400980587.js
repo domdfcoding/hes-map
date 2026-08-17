@@ -236,7 +236,7 @@ var listedBuildings400980587 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens400980587 = [
+var gardensLandscapes400980587 = [
 [54.9798311253, -5.0227039838, "GDL00266", "Lochryan", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00266"],
 [54.9183474699, -5.136056185, "GDL00407", "Lochnaw Castle", null, "Mon, 01 Apr 2019", "https://portal.historicenvironment.scot/designation/GDL00407"],
 ]

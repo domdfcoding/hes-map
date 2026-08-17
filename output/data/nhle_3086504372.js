@@ -197,7 +197,7 @@ var listedBuildings3086504372 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens3086504372 = [
+var gardensLandscapes3086504372 = [
 [59.0340574565, -2.9192743109, "GDL00038", "Balfour Castle", null, "Sun, 30 Mar 2003", "https://portal.historicenvironment.scot/designation/GDL00038"],
 ]
 

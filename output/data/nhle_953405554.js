@@ -1748,7 +1748,7 @@ var listedBuildings953405554 = [
 ]
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
-var parksGardens953405554 = [
+var gardensLandscapes953405554 = [
 [56.3647730008, -4.0222359545, "GDL00004", "Aberuchill Castle", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00004"],
 [56.9444802884, -4.9933605831, "GDL00006", "Achnacarry", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00006"],
 [56.2448053312, -4.9563391569, "GDL00022", "Ardkinglas And Strone", null, "Tue, 30 Jun 1987", "https://portal.historicenvironment.scot/designation/GDL00022"],
