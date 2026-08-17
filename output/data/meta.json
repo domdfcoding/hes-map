@@ -1,32 +1,32 @@
 {
-  "Scotland Battlefields": {
+  "Battlefields": {
     "description": "",
     "copyrightText": "",
-    "dataLastEditDate": 1786976779157.742
+    "dataLastEditDate": 1786977973318.516
   },
-  "Scotland Listed Buildings": {
+  "Listed Building points": {
     "description": "",
     "copyrightText": "",
-    "dataLastEditDate": 1786976781628.789
+    "dataLastEditDate": 1786977975778.6812
   },
-  "Scotland Parks and Gardens": {
+  "Parks and Gardens": {
     "description": "",
     "copyrightText": "",
-    "dataLastEditDate": 1786976788252.2969
+    "dataLastEditDate": 1786977982262.47
   },
-  "Scotland Historic Marine Protected Areas": {
+  "Marine Protected Areas": {
     "description": "",
     "copyrightText": "",
-    "dataLastEditDate": 1786976788508.672
+    "dataLastEditDate": 1786977982517.752
   },
-  "Scotland Scheduled Monuments": {
+  "Scheduled Monuments": {
     "description": "",
     "copyrightText": "",
-    "dataLastEditDate": 1786976791656.815
+    "dataLastEditDate": 1786977985806.088
   },
-  "Scotland World Heritage Sites": {
+  "World Heritage Sites": {
     "description": "",
     "copyrightText": "",
-    "dataLastEditDate": 1786976792490.8308
+    "dataLastEditDate": 1786977986690.229
   }
 }

@@ -108,7 +108,7 @@ def download_data(output_directory: PathLike) -> dict[str, Any]:
 
 		# TODO: get description from e.g. https://inspire.hes.scot/arcgis/services/HES/World_Heritage_Sites/MapServer/WFSServer?request=GetCapabilities&service=WFS
 		meta["layers"].append({
-				"name": f"Scotland {layer.name}",
+				"name": layer.geojson_filename_stem,
 				"description": '',
 				"copyrightText": '',  # TODO
 				"editingInfo": {
