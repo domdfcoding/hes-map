@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="referrer" content="strict-origin-when-cross-origin">
+            <link rel="icon"
+                  type="image/svg+xml"
+                  href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzODQgNTEyIiBmaWxsPSIjNDc4NmVkIj4KCTwhLS0hRm9udCBBd2Vzb21lIEZyZWUgdjcuMi4wIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlL2ZyZWUgKEljb25zOiBDQyBCWSA0LjAsIEZvbnRzOiBTSUwgT0ZMIDEuMSwgQ29kZTogTUlUIExpY2Vuc2UpIENvcHlyaWdodCAyMDI2IEZvbnRpY29ucywgSW5jLi0tPgoJPHBhdGggZD0iTTY0IDBDMjguNyAwIDAgMjguNyAwIDY0TDAgNDQ4YzAgMzUuMyAyOC43IDY0IDY0IDY0bDI1NiAwYzM1LjMgMCA2NC0yOC43IDY0LTY0bDAtMzg0YzAtMzUuMy0yOC43LTY0LTY0LTY0TDY0IDB6TTE3NiAzNTJsMzIgMGMxNy43IDAgMzIgMTQuMyAzMiAzMmwwIDgwLTk2IDAgMC04MGMwLTE3LjcgMTQuMy0zMiAzMi0zMnpNOTYgMTEyYzAtOC44IDcuMi0xNiAxNi0xNmwzMiAwYzguOCAwIDE2IDcuMiAxNiAxNmwwIDMyYzAgOC44LTcuMiAxNi0xNiAxNmwtMzIgMGMtOC44IDAtMTYtNy4yLTE2LTE2bDAtMzJ6TTI0MCA5NmwzMiAwYzguOCAwIDE2IDcuMiAxNiAxNmwwIDMyYzAgOC44LTcuMiAxNi0xNiAxNmwtMzIgMGMtOC44IDAtMTYtNy4yLTE2LTE2bDAtMzJjMC04LjggNy4yLTE2IDE2LTE2ek05NiAyNDBjMC04LjggNy4yLTE2IDE2LTE2bDMyIDBjOC44IDAgMTYgNy4yIDE2IDE2bDAgMzJjMCA4LjgtNy4yIDE2LTE2IDE2bC0zMiAwYy04LjggMC0xNi03LjItMTYtMTZsMC0zMnptMTQ0LTE2bDMyIDBjOC44IDAgMTYgNy4yIDE2IDE2bDAgMzJjMCA4LjgtNy4yIDE2LTE2IDE2bC0zMiAwYy04LjggMC0xNi03LjItMTYtMTZsMC0zMmMwLTguOCA3LjItMTYgMTYtMTZ6Ii8+Cjwvc3ZnPg==">
+            <title>Scotland Historic Environment Map</title>
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+                  rel="stylesheet"
+                  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+                  crossorigin="anonymous">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+
+			<script>
+            	const MAX_ZOOM = 20;
+			</script>
+
+    <link rel="preload" href="https://unpkg.com/leaflet-extra-markers@1.2.2/dist/img/markers_default.png" as="image" />
+	<link rel="preload" href="https://unpkg.com/leaflet-extra-markers@1.2.2/dist/img/markers_shadow.png" as="image" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-extra-markers@1.2.2/dist/css/leaflet.extra-markers.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.90.0/dist/L.Control.Locate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"/>
+
+                <style>
+                    .leaflet-control-locate {
+                        a {
+                            font-size: 1.4em;
+                            .leaflet-locate-icon {
+                                color: black
+                            }
+                        }
+                    }
+                </style>
+
+
+				<style>
+					.leaflet-control-about {
+						a {
+							font-size: 1.4em;
+							.leaflet-about-icon {
+								color: black;
+							}
+						}
+					}
+				</style>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-geosearch@4.4.0/dist/geosearch.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/domdfcoding/folium-map-swap-control@v0.3.0/folium_map_swap_control/map_swap_control.min.css"/>
+
+				<style>
+					.leaflet-control-map-swap {
+						a {
+							font-size: 1.4em;
+							.leaflet-map-swap-icon {
+								color: black;
+							}
+						}
+					}
+				</style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.layerscontrol-minimap@1.0.21/control.layers.minimap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/domdfcoding/folium-layercontrols@v0.1.0b1/folium_layercontrols/control.layers.minimap.min.css"/>
+            <link rel="stylesheet" href="static/css/style.css" />
+
+
+
+
+    </head>
+
+    <body>
+
+            <!-- Loading Bar Modal -->
+            <div class="modal fade"
+                 id="progress"
+                 data-bs-backdrop="static"
+                 data-bs-keyboard="false"
+                 tabindex="-1"
+                 aria-labelledby="progressLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="progressLabel">Loading markers for area...</h1>
+                        </div>
+                        <div class="modal-body">
+                            <div class="progress"
+                                 role="progressbar"
+                                 aria-label="Example with label"
+                                 aria-valuenow="0"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100">
+                                <div class="progress-bar  progress-bar-striped progress-bar-animated"
+                                     id="progress-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    <div class="modal fade modal-lg"
+            id="aboutModal"
+            tabindex="-1"
+            aria-labelledby="aboutModalLabel"
+            aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="aboutModalLabel">About</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <p>Map showing Scotland's historic environment.</p>
+
+                    <p>
+                        Powered by <code>nhle-map</code>, available on GitHub at <a href="https://github.com/domdfcoding/nhle-map"><code>github.com/domdfcoding/nhle-map</code></a>
+                    </p>
+
+                    <p>
+                        Uses data downloaded from <a href="https://portal.historicenvironment.scot/apex/f?p=PORTAL:downloads:::::DATASET:ALL">Historic Environment Scotland</a>.
+                        <br>
+                        Licenced under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3 (OGL)</a>
+                        <br>
+                        Contains Historic Environment Scotland and Ordnance Survey data © Historic Environment Scotland - Scottish Charity No. SC045925 © Crown copyright and database right 2026.
+                    </p>
+
+
+                        <h3 class="fs-6">Legend</h3>
+
+                        <table class="table table-striped legend" id="legendTable">
+                            <thead>
+                            </thead>
+                            <tbody>
+
+                                    <tr>
+                                        <th class="text-center"
+                                            style="background-color: orange"
+                                            scope="row"><img src='static/img/Challenge_Icon.svg' width='20px'></th>
+                                        <td class="layer-name">Battlefields</td>
+                                        <td class="layer-description">
+                                            <div class="container description-container">
+                                                        <p class="collapse description-collapse"
+                                                            id="battlefieldsCollapse"
+                                                            data-bs-parent="#legendTable"
+                                                            aria-expanded="false">The Inventory of Historic Battlefields is a list of nationally important battlefields in Scotland that meet the criteria published in SHEP 2009. It provides information on the sites to raise awareness of their significance and assist in their protection and management for the future. It is a major resource for enhancing the understanding, appreciation and enjoyment of battlefields, for promoting education and stimulating further research, and for developing their potential as attractions for visitors.</p>
+                                                    </div>
+
+                                            </td>
+                                        <td class="expand-btn">
+                                            <div>
+                                                    <a role="button"
+                                                        class="collapsed description-btn"
+                                                        data-bs-toggle="collapse"
+                                                        href="#battlefieldsCollapse"
+                                                        aria-expanded="false"
+                                                        aria-controls="battlefieldsCollapse"></a>
+                                                </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="text-center"
+                                            style="background-color: #006fb2"
+                                            scope="row"><i class='fa-solid fa-building'></i></th>
+                                        <td class="layer-name">Listed Buildings</td>
+                                        <td class="layer-description">
+                                            <div class="container description-container">
+                                                        <p class="collapse description-collapse"
+                                                            id="listedBuildingsCollapse"
+                                                            data-bs-parent="#legendTable"
+                                                            aria-expanded="false">The Listed Building Dataset comprises the statutory addresses and supplementary information for listed buildings in Scotland.
+<br>
+Listing is the recognition through the Planning (Listed Buildings and Conservation Areas) (Scotland) Act 1997 that a building or structure is of "special" interest. Historic Scotland lists buildings on behalf of Scottish Ministers.</p>
+                                                    </div>
+
+                                            </td>
+                                        <td class="expand-btn">
+                                            <div>
+                                                    <a role="button"
+                                                        class="collapsed description-btn"
+                                                        data-bs-toggle="collapse"
+                                                        href="#listedBuildingsCollapse"
+                                                        aria-expanded="false"
+                                                        aria-controls="listedBuildingsCollapse"></a>
+                                                </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="text-center"
+                                            style="background-color: green"
+                                            scope="row"><i class='fa-solid fa-tree'></i></th>
+                                        <td class="layer-name">Gardens and Designed Landscapes</td>
+                                        <td class="layer-description">
+                                            <div class="container description-container">
+                                                        <p class="collapse description-collapse"
+                                                            id="gardensLandscapesCollapse"
+                                                            data-bs-parent="#legendTable"
+                                                            aria-expanded="false">Gardens and designed landscapes are grounds which have been laid out for artistic effect and, in appropriate cases, include references to any buildings, land, or water on, adjacent, or contiguous to such grounds.
+<br>
+Sites included in the Inventory of Gardens and Designed Landscapes are nationally important. The criteria for determining national importance is published in Annex 5 of the Scottish Historic Environment Policy 2011.
+<br>
+The duty to compile and maintain the Inventory is statutory. Historic Scotland manages this work on behalf of the Scottish Ministers.
+<br>
+The designation itself is non-statutory. There is no primary legislation that affords protection to Inventory gardens and designed landscapes. However, Inventory status is a material consideration in the planning system.</p>
+                                                    </div>
+
+                                            </td>
+                                        <td class="expand-btn">
+                                            <div>
+                                                    <a role="button"
+                                                        class="collapsed description-btn"
+                                                        data-bs-toggle="collapse"
+                                                        href="#gardensLandscapesCollapse"
+                                                        aria-expanded="false"
+                                                        aria-controls="gardensLandscapesCollapse"></a>
+                                                </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="text-center"
+                                            style="background-color: purple"
+                                            scope="row"><i class='fa-solid fa-anchor'></i></th>
+                                        <td class="layer-name">Historic Marine Protected Areas</td>
+                                        <td class="layer-description">
+                                            <div class="container description-container">
+                                                        <p class="collapse description-collapse"
+                                                            id="marineProtectedAreasCollapse"
+                                                            data-bs-parent="#legendTable"
+                                                            aria-expanded="false">Historic Marine Protected Areas "Historic MPAs" are designated under Section 67 of the Marine Scotland Act 2010 to protect marine historic assets (e.g historic shipwrecks) of national importance within Scottish territorial waters.
+<br>
+The Scottish Government is committed to clean, healthy, safe, productive, biologically diverse marine and coastal environments, managed to meet the long-term needs of people and nature. This includes protecting and, where appropriate, enhancing our most important historic wrecks and other marine heritage sites in such a way that they can be valued and understood. One way Scottish Ministers can achieve this is by designating nationally important marine historic assets in Scottish territorial waters as Historic Marine Protected Areas under the Marine (Scotland) Act 2010.
+<br>
+The data shows the boundaries of all Historic Marine Protected Areas in Scotland. You should refer to the Historic Marine Protected Area site documentation for exact locations of individual boundary points and supplementary information.</p>
+                                                    </div>
+
+                                            </td>
+                                        <td class="expand-btn">
+                                            <div>
+                                                    <a role="button"
+                                                        class="collapsed description-btn"
+                                                        data-bs-toggle="collapse"
+                                                        href="#marineProtectedAreasCollapse"
+                                                        aria-expanded="false"
+                                                        aria-controls="marineProtectedAreasCollapse"></a>
+                                                </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="text-center"
+                                            style="background-color: #a32d2f"
+                                            scope="row"><i class='fa-solid fa-monument'></i></th>
+                                        <td class="layer-name">Scheduled Monuments</td>
+                                        <td class="layer-description">
+                                            <div class="container description-container">
+                                                        <p class="collapse description-collapse"
+                                                            id="scheduledMonumentsCollapse"
+                                                            data-bs-parent="#legendTable"
+                                                            aria-expanded="false">Scheduled monuments are nationally important monuments and sites. The aim of scheduling is to preserve sites and monuments as far as possible in the form in which they have come down to us today. They are legally protected through the Ancient Monuments and Archaeological Areas Act 1979.
+<br>
+National importance takes account of a wide range of factors, including artistic, archaeological, architectural, historic, traditional, aesthetic, scientific and social. Guidance and criteria to assess national importance of monuments is set out by Scottish Ministers in The Scottish Historic Environment Policy.</p>
+                                                    </div>
+
+                                            </td>
+                                        <td class="expand-btn">
+                                            <div>
+                                                    <a role="button"
+                                                        class="collapsed description-btn"
+                                                        data-bs-toggle="collapse"
+                                                        href="#scheduledMonumentsCollapse"
+                                                        aria-expanded="false"
+                                                        aria-controls="scheduledMonumentsCollapse"></a>
+                                                </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="text-center"
+                                            style="background-color: grey"
+                                            scope="row"><i class='fa-solid fa-certificate'></i></th>
+                                        <td class="layer-name">World Heritage Sites</td>
+                                        <td class="layer-description">
+                                            <div class="container description-container">
+                                                        <p class="collapse description-collapse"
+                                                            id="worldHeritageSitesCollapse"
+                                                            data-bs-parent="#legendTable"
+                                                            aria-expanded="false">World Heritage Sites are described by UNESCO as exceptional places of "outstanding universal value" and "belonging to all the peoples of the world, irrespective of the territory on which they are located".
+<br>
+The United Nations Educational, Scientific and Cultural Organization (UNESCO) seeks to protect and preserve such sites through an international treaty called the Convention concerning the Protection of the World Cultural and Natural Heritage, drawn up in 1972
+<br>
+Scottish Ministers identify and put forward sites to the Department for Culture, Media and Sport for nomination.
+<br>
+Scotland currently has five cultural World Heritage Sites. Once a World Heritage Site is inscribed, under the Convention, member states have a duty to protect, conserve and present such sites for future generations.
+<br>
+Sites in Scotland inscribed on the World Heritage List: The Antonine Wall, Edinburgh Old and New Towns, New Lanark, The Heart of Neolithic Orkney and St Kilda World Heritage Site.</p>
+                                                    </div>
+
+                                            </td>
+                                        <td class="expand-btn">
+                                            <div>
+                                                    <a role="button"
+                                                        class="collapsed description-btn"
+                                                        data-bs-toggle="collapse"
+                                                        href="#worldHeritageSitesCollapse"
+                                                        aria-expanded="false"
+                                                        aria-controls="worldHeritageSitesCollapse"></a>
+                                                </div>
+
+                                        </td>
+                                    </tr>
+
+                            </tbody>
+                        </table>
+
+
+                    <small class="text-muted">Generated on Mon, 17 Aug 2026 15:58:34 GMT. Data last updated Sun, 09 Aug 2026 23:00:00 GMT</small>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+            <main class="map-container p-2">
+
+
+
+            <div class="folium-map" id="map" ></div>
+
+                    <p class="d-none">
+                        Zoom level: <span id="zoom"></span>
+                    </p>
+
+
+            </main>
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                    crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/domdfcoding/domdf-folium-tools@v0.1.0b36/domdf_folium_tools/domdf-folium-tools.min.js"></script>
+    <script src="https://unpkg.com/leaflet-extra-markers@1.2.2/dist/js/leaflet.extra-markers.js"></script>
+    <script src="static/js/markers.js"></script>
+    <script src="static/js/layer_data.js"></script>
+    <script src="data/nhle_id_lookup.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/domdfcoding/folium-zoom-state@v0.1.0/folium_zoom_state/zoom_state.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.90.0/dist/L.Control.Locate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/domdfcoding/folium-about-button@v0.2.0/folium_about_button/about_button.min.js"></script>
+    <script src="https://unpkg.com/leaflet-geosearch@4.4.0/dist/bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/domdfcoding/folium-map-search@v0.1.0b6/folium_map_search/folium-map-search.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/domdfcoding/folium-map-swap-control@v0.3.0/folium_map_swap_control/map_swap_control.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.layerscontrol-minimap@1.0.21/L.Control.Layers.Minimap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/domdfcoding/folium-layercontrols@v0.1.0b1/folium_layercontrols/L.Control.Layers.Minimap.Toggle.min.js"></script>
+    <script src="static/js/custom_layer_control.js"></script>
+            <script>
+
+            var mapOptions = {
+  "maxBounds": [
+[
+52,
+-10,
+],
+[
+63,
+4,
+],
+],
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+  "minZoom": 9,
+  "maxZoom": 20,
+  "wheelPxPerZoomLevel": 80,
+};
+            var defaultZoom = mapOptions["zoom"] ?? 0;
+            var urlZoomState = zoomStateFromURL(defaultZoom, L.latLng([56.6594, -4.0112]));
+            mapOptions["zoom"] = urlZoomState["zoomLvl"]
+
+            var map = L.map(
+                "map",
+                {
+                    center: urlZoomState["centre"],
+                    crs: L.CRS.EPSG3857,
+                    ...mapOptions
+
+                }
+            );
+            L.control.scale().addTo(map);
+
+
+
+
+
+            var tile_layer_osm_carto = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "Map \u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+  "referrerPolicy": "strict-origin-when-cross-origin",
+}
+
+            );
+
+
+            var tile_layer_os10k = L.tileLayer(
+                "https://geo.nls.uk/mapdata3/os/britain10knationalgridnew/{z}/{x}/{y}.png",
+                {
+  "minZoom": 1,
+  "maxZoom": 20,
+  "maxNativeZoom": 16,
+  "noWrap": false,
+  "attribution": "OS 1:10,000 1949-1972 | \u003ca href=\u0027https://maps.nls.uk\u0027\u003emaps.nls.uk\u003c/a\u003e | CC-BY",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+
+
+            var tile_layer_os1250 = L.tileLayer(
+                "https://geo.nls.uk/maps/os/1250_B_2eng/{z}/{x}/{y}.png",
+                {
+  "minZoom": 1,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "OS 1:1,250 1949-1975 | \u003ca href=\u0027https://maps.nls.uk\u0027\u003emaps.nls.uk\u003c/a\u003e | CC-BY",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+
+
+            var tile_layer_os2500 = L.tileLayer(
+                "https://geo.nls.uk/maps/os/2500_A_1S/{z}/{x}/{y}.png",
+                {
+  "minZoom": 1,
+  "maxZoom": 20,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "OS 1:2,500 1948-1975 | \u003ca href=\u0027https://maps.nls.uk\u0027\u003emaps.nls.uk\u003c/a\u003e | CC-BY",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+
+
+            var marker_cluster_nhle = new L.MarkerClusterGroup(
+                {
+  "chunkedLoading": true,
+}
+            );
+            marker_cluster_nhle.options.chunkProgress =
+                updateProgressBar;
+            marker_cluster_nhle.options.maxClusterRadius =
+                getClusterRadius;
+
+
+            var marker_cluster_battlefields = new L.MarkerGroup(
+				marker_cluster_nhle,
+                {
+  "layerControlColour": "orange",
+}
+            );
+
+
+
+            marker_cluster_battlefields.addTo(map);
+
+
+            var marker_cluster_listed_buildings = new L.MarkerGroup(
+				marker_cluster_nhle,
+                {
+  "layerControlColour": "#006fb2",
+}
+            );
+
+
+
+            marker_cluster_listed_buildings.addTo(map);
+
+
+            var marker_cluster_gardens_landscapes = new L.MarkerGroup(
+				marker_cluster_nhle,
+                {
+  "layerControlColour": "green",
+}
+            );
+
+
+
+            marker_cluster_gardens_landscapes.addTo(map);
+
+
+            var marker_cluster_marine_protected_areas = new L.MarkerGroup(
+				marker_cluster_nhle,
+                {
+  "layerControlColour": "purple",
+}
+            );
+
+
+
+            marker_cluster_marine_protected_areas.addTo(map);
+
+
+            var marker_cluster_scheduled_monuments = new L.MarkerGroup(
+				marker_cluster_nhle,
+                {
+  "layerControlColour": "#a32d2f",
+}
+            );
+
+
+
+            marker_cluster_scheduled_monuments.addTo(map);
+
+
+            var marker_cluster_world_heritage_sites = new L.MarkerGroup(
+				marker_cluster_nhle,
+                {
+  "layerControlColour": "grey",
+}
+            );
+
+
+
+            marker_cluster_world_heritage_sites.addTo(map);
+
+
+
+            const progress = document.getElementById('progress')
+            var modal = bootstrap.Modal.getOrCreateInstance(progress)
+            var progressBar = document.getElementById('progress-bar');
+
+            console.log('start creating markers: ' + window.performance.now());
+            map.addLayer(marker_cluster_nhle);
+
+            var loadedIDs = [];
+
+			loadNewMarkers().then(function (result){
+				console.log("All markers loaded")
+				});
+
+            // map.on('zoomend', loadNewMarkers);
+            map.on('moveend', loadNewMarkers);
+
+
+
+
+			setupZoomState(map);
+
+
+
+                var locate_control = L.control.locate(
+                    {"icon": "fa-solid fa-location-crosshairs", "keepCurrentZoomLevel": [13, 18], "locateOptions": {"enableHighAccuracy": true, "maxZoom": 16}}
+                ).addTo(map);
+
+
+
+				var about_control_d714f4e1fdd2eb11c42deb3760658c80 = new AboutControl(
+					{"modalID": "aboutModal"}
+				).addTo(map);
+
+
+				var map_search_control_25c10f457cdb95350306c18b495d96b5 = L.MapSearchControl({
+					provider: new L.MapSearchProvider({
+				map: map,
+				layer: marker_cluster_nhle,
+				...{"featureType": "settlement", "viewbox": "-8,54,1,61"},
+				}),
+					...{"autoCompleteDelay": 1000, "closeOnSubmit": true, "disableEnterSearch": true, "maxSuggestions": 15, "searchLabel": "Enter town or list entry name", "showMarker": false},
+					}
+				)
+
+				// Close search box when map clicked.
+				map.on('click', map_search_control_25c10f457cdb95350306c18b495d96b5.close, map_search_control_25c10f457cdb95350306c18b495d96b5);
+
+				map_search_control_25c10f457cdb95350306c18b495d96b5.addTo(map);
+
+
+				var map_swap_control_2ed0ad7be0cf1415b0b5168e19918c13 = new MapSwapControl(
+					{"maps": {"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc77\udb40\udc6c\udb40\udc73\udb40\udc7f England \u0026 Wales": "https://domdfcoding.github.io/nhle-map/", "\ud83c\uddeb\ud83c\uddf7 France": "https://domdfcoding.github.io/monuments-historiques/", "\u003ci class=\"fa-solid fa-map fa-fw\"\u003e\u003c/i\u003e More": "https://domdfcoding.github.io/maps/"}, "icon": "fa-solid fa-map"}
+				)
+
+				// Close the control when map clicked.
+				map.on('click', map_swap_control_2ed0ad7be0cf1415b0b5168e19918c13.close, map_swap_control_2ed0ad7be0cf1415b0b5168e19918c13);
+
+				map_swap_control_2ed0ad7be0cf1415b0b5168e19918c13.addTo(map);
+
+
+            var layer_control_basemap_layers = {
+                base_layers : {
+                    "OpenStreetMap" : tile_layer_osm_carto,
+                    "OS 1:10,000 1949-1972" : tile_layer_os10k,
+                    "OS 1:1,250 1949-1975" : tile_layer_os1250,
+                    "OS 1:2,500 1948-1975" : tile_layer_os2500,
+                },
+                overlays :  {
+                    "Battlefields \u003cimg src=\u0027static/img/Challenge_Icon.svg\u0027 width=\u002720px\u0027\u003e" : marker_cluster_battlefields,
+                    "Listed Buildings \u003ci class=\u0027fa-solid fa-building\u0027\u003e\u003c/i\u003e" : marker_cluster_listed_buildings,
+                    "Gardens and Designed Landscapes \u003ci class=\u0027fa-solid fa-tree\u0027\u003e\u003c/i\u003e" : marker_cluster_gardens_landscapes,
+                    "Historic Marine Protected Areas \u003ci class=\u0027fa-solid fa-anchor\u0027\u003e\u003c/i\u003e" : marker_cluster_marine_protected_areas,
+                    "Scheduled Monuments \u003ci class=\u0027fa-solid fa-monument\u0027\u003e\u003c/i\u003e" : marker_cluster_scheduled_monuments,
+                    "World Heritage Sites \u003ci class=\u0027fa-solid fa-certificate\u0027\u003e\u003c/i\u003e" : marker_cluster_world_heritage_sites,
+                },
+            };
+            let layer_control_basemap = customlayercontrol(
+                layer_control_basemap_layers.base_layers,
+                layer_control_basemap_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map);
+
+
+
+            const overlayState = new OverlayState(map, layer_control_basemap, "overlays")
+            overlayState.fromURL("111111")
+            overlayState.setup();
+
+
+            const basemapState = new BasemapState(map, layer_control_basemap, "basemap")
+            basemapState.fromURL("OpenStreetMap").addTo(map)
+            basemapState.setup();
+
+
+
+
+    map.attributionControl.setPrefix(`<a target="_blank" href="https://leafletjs.com" title="A JavaScript library for interactive maps">🇺🇦 Leaflet</a> | Data © Historic Environment Scotland 2026 (OGL)`)
+
+
+            map.on('zoomend', showZoomLevel);
+            showZoomLevel();
+
+            function showZoomLevel() {
+                document.getElementById('zoom').innerHTML = map.getZoom();
+            }
+
+            </script>
+
+    </body>
+</html>
