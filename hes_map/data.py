@@ -35,7 +35,7 @@ from typing import Any, NamedTuple, TypedDict
 from xml.etree.ElementPath import findtext
 
 # 3rd party
-import pycrs
+import pycrs  # type: ignore[import-untyped]
 import requests
 import shapefile  # type: ignore[import-untyped]
 from domdf_python_tools.paths import PathPlus
@@ -246,8 +246,8 @@ def _process_atom_summary(summary: str) -> str:
 	summary = re.sub("\n\\s+", '\n', summary, flags=re.DOTALL)
 	summary = summary.replace("<div><br/><div>", '')
 	summary = summary.replace('â', '"')
-	summary = summary.replace(r"\u0080\u0098", '')
-	summary = summary.replace(r"\u0080\u0099", '')
+	summary = summary.replace("", '')
+	summary = summary.replace("", '')
 	summary = summary.rstrip().removesuffix("<br/>")
 	return summary.strip()
 

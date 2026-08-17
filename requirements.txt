@@ -9,7 +9,7 @@ folium-map-swap-control>=0.1.0.post1
 folium-zoom-state>=0.1.0
 jinja2>=3.1.6
 nhle-map @ git+https://github.com/domdfcoding/nhle-map
-pycrs
+pycrs>=1.0.2
 pyproj>=3.7.1
 pyshp>=3.1.6
 requests>=2.33.1
