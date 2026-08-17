@@ -127,7 +127,7 @@ def download_data(output_directory: PathLike) -> dict[str, Any]:
 						},
 				})
 
-		records = sf.records()
+		records = sf.shapeRecords()
 		total_lines = len(records)
 
 		geojson: GeoJSON = {
@@ -140,14 +140,9 @@ def download_data(output_directory: PathLike) -> dict[str, Any]:
 				"crs": {"type": "name", "properties": {"name": "urn:ogc:def:crs:EPSG::4326"}},
 				}
 
-		for record in records:
-			feature = record.as_dict()
-
-			# TODO: use SHAPE for polygons
-			if "LON" in feature:
-				lat, lng = feature["LAT"], feature["LON"]
-			else:
-				lat, lng = transform(feature['X'], feature['Y'])
+		for shaperecord in records:
+			feature = shaperecord.record.as_dict()
+			shape = shaperecord.shape
 
 			if feature["DES_TYPE"] == "WORLD HERITAGE SITE":
 				feature["DES_TYPE"] = feature["DES_TYPE"].title()
@@ -165,13 +160,36 @@ def download_data(output_directory: PathLike) -> dict[str, Any]:
 					"hyperlink": feature["LINK"],
 					"ListEntry": feature["DES_REF"],
 					}
-			geojson["features"].append({
-					"type": "Feature",
-					"id": feature_properties["ListEntry"],
-					"geometry": {"type": "MultiPoint", "coordinates": [[lng, lat]]},
-					"geometry_name": "geom",
-					"properties": feature_properties,
-					})
+
+			if layer.polygonal:
+				assert shape.shapeTypeName == "POLYGON"
+				# breakpoint()
+
+				assert len(shape.points)
+				polygon = [transform(lat, lng)[::-1] for (lat, lng) in shape.points]  # TODO: flip lat lng and not output
+				polygon.append(polygon[0])
+
+				geojson["features"].append({
+						"type": "Feature",
+						"id": feature_properties["ListEntry"],
+						"geometry": {"type": "Polygon", "coordinates": [polygon]},
+						"geometry_name": "geom",
+						"properties": feature_properties,
+						})
+
+			else:				
+				if "LON" in feature:
+					lat, lng = feature["LAT"], feature["LON"]
+				else:
+					lat, lng = transform(feature['X'], feature['Y'])
+
+				geojson["features"].append({
+						"type": "Feature",
+						"id": feature_properties["ListEntry"],
+						"geometry": {"type": "MultiPoint", "coordinates": [[lng, lat]]},
+						"geometry_name": "geom",
+						"properties": feature_properties,
+						})
 
 			# TODO: other relevant properties e.g. CLASS, GROUPCAT, NAT_PARK, AMENDED
 			# TODO: notes, poly

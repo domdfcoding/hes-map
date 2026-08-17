@@ -51,6 +51,7 @@ BATTLEFIELDS = Dataset(
 		noun="Battlefield",
 		icon=SVGLayerIcon(filename="static/img/Challenge_Icon.svg", marker_colour="orange"),
 		geojson_filename="Battlefields.geojson",
+		polygonal=True,
 		)
 
 LISTED_BUILDINGS = Dataset(
@@ -60,6 +61,8 @@ LISTED_BUILDINGS = Dataset(
 		noun="Listed Building",
 		icon=FontawesomeLayerIcon(icon="building", marker_colour="#006fb2", svg_marker=True),
 		geojson_filename="Listed Building points.geojson",
+		# polygons_geojson_filename="Listed Building polygons.geojson",
+		# hidden_polygons=True,
 		)
 
 PARKS_AND_GARDENS = Dataset(
@@ -69,6 +72,7 @@ PARKS_AND_GARDENS = Dataset(
 		noun="Garden and Designed Landscape",
 		icon=FontawesomeLayerIcon(icon="tree", marker_colour="green"),
 		geojson_filename="Gardens and Designed Landscapes.geojson",
+		polygonal=True,
 		)
 
 MARINE_PROTECTED_AREAS = Dataset(
@@ -78,6 +82,7 @@ MARINE_PROTECTED_AREAS = Dataset(
 		noun="Historic Marine Protected Area",
 		icon=FontawesomeLayerIcon(icon="anchor", marker_colour="purple", svg_marker=True),
 		geojson_filename="Marine Protected Areas.geojson",
+		# polygonal=True,
 		)
 
 SCHEDULED_MONUMENTS = Dataset(
@@ -87,6 +92,7 @@ SCHEDULED_MONUMENTS = Dataset(
 		noun="Scheduled Monument",
 		icon=FontawesomeLayerIcon(icon="monument", marker_colour="#a32d2f", svg_marker=True),
 		geojson_filename="Scheduled Monuments.geojson",
+		polygonal=True,
 		)
 
 WORLD_HERITAGE_SITES = Dataset(
@@ -96,6 +102,7 @@ WORLD_HERITAGE_SITES = Dataset(
 		noun="World Heritage Site",
 		icon=FontawesomeLayerIcon(icon="certificate", marker_colour="grey", svg_marker=True),
 		geojson_filename="World Heritage Sites.geojson",
+		# polygonal=True,
 		)
 
 LAYERS = [
