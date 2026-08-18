@@ -165,7 +165,7 @@ def download_data(output_directory: PathLike) -> dict[str, Any]:
 			list_date = datetime.datetime.combine(
 					feature.get("DESIGNATED", feature["CREATED"]),
 					datetime.time.min,
-					).timestamp() * 1000
+					).replace(tzinfo=datetime.timezone.utc).timestamp() * 1000
 			feature_properties = {
 					"Grade": feature.get("CATEGORY"),
 					"Name": feature["DES_TITLE"],  # or ENT_TITLE?
@@ -270,12 +270,12 @@ def parse_atom_data() -> dict[str, AtomData]:  # TODO: TypedDict
 
 	for entry in root.iter(_ATOM_NS + "entry"):
 		title = _process_atom_title(findtext(entry, _ATOM_NS + "title", ''))
-		# updated = datetime.datetime.combine(findtext(entry, _ATOM_NS + "updated", ''), datetime.time.min)
-		updated = datetime.datetime.fromisoformat(findtext(entry, _ATOM_NS + "updated", ''))
+		updated_isoformat = findtext(entry, _ATOM_NS + "updated", '') or "1970-01-01"
+		updated = datetime.datetime.fromisoformat(updated_isoformat + "T00:00+00:00")
 		summary = _process_atom_summary(findtext(entry, _ATOM_NS + "summary", ''))
 		data.append({
 				"title": title,
-				"updated": updated.astimezone(datetime.timezone.utc),
+				"updated": updated,
 				"summary": summary,
 				})
 
