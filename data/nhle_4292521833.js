@@ -17,7 +17,7 @@ var marineProtectedAreas4292521833 = [
 
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
 var scheduledMonuments4292521833 = [
-[59.1203117546, -5.8293840308, "SM1683", "St Ronan's Church & village settlement,Rona", "Crosses and carved stones: cross-incised stone; Ecclesiastical: cashel; Secular: field system", "Thu, 04 Apr 1940", "https://portal.historicenvironment.scot/designation/SM1683", null,
+[59.1203117546, -5.8293840308, "SM1683", "St Ronan's Church & village settlement,Rona", "Crosses and carved stones: cross-incised stone; Ecclesiastical: cashel; Secular: field system", "Fri, 05 Apr 1940", "https://portal.historicenvironment.scot/designation/SM1683", null,
  [[[[59.11937976258961, -5.831755376366159], [59.11943010341177, -5.831733687333305], [59.119547507443315, -5.831782537727376], [59.11960242853373, -5.831788678300406], [59.11972674068848, -5.831750041943194],
     [59.11975790839777, -5.831755628338795], [59.11977907442323, -5.831770602887437], [59.11990250790907, -5.831652016298452], [59.119949705115005, -5.831663598100823], [59.120000280921396, -5.831707077099085],
     [59.1201161864721, -5.831879742435854], [59.1202567974297, -5.832057273143549], [59.12032767314419, -5.832145052865733], [59.120388360468695, -5.832248503506333], [59.12046179814374, -5.8322861355721765],
