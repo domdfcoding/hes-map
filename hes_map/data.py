@@ -275,7 +275,7 @@ def parse_atom_data() -> dict[str, AtomData]:  # TODO: TypedDict
 		summary = _process_atom_summary(findtext(entry, _ATOM_NS + "summary", ''))
 		data.append({
 				"title": title,
-				"updated": updated,
+				"updated": updated.astimezone(datetime.timezone.utc),
 				"summary": summary,
 				})
 
