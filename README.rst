@@ -8,6 +8,25 @@ hes-map
 
 .. end short_desc
 
+.. figure:: https://domdfcoding.github.io/assets/img/hes_map_screenshot.png
+   :width: 500px
+   :height: 500px
+   :alt: Screenshot of the map
+
+   `View The Map`_
+
+-----
+
+| Dataset downloaded from the `Historic Environment Scotland`_.
+| Contains Historic Environment Scotland and Ordnance Survey data © Historic Environment Scotland - Scottish Charity No. SC045925 © Crown copyright and database right 2026.
+| Licenced under the `Open Government Licence v3 (OGL)`_.
+
+.. _View The map: https://domdfcoding.github.io/hes-map/
+.. _Historic Environment Scotland: https://portal.historicenvironment.scot/apex/f?p=PORTAL:downloads:::::DATASET:ALL
+.. _Open Government Licence v3 (OGL): https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+
+-----
+
 
 .. start shields
 
