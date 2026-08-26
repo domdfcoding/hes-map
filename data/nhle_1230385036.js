@@ -1052,7 +1052,6 @@ var listedBuildings1230385036 = [
 [57.8793352876, -4.0266365659, "LB24640", "CHURCH STREET FREE CHURCH OF SCOTLAND, CHURCH ROOM (FORMER SCHOOL), BURIAL GROUND AND GATE PIERS WITH FRONT RETAINING WALL", "B", "Wed, 07 Mar 1984", "https://portal.historicenvironment.scot/designation/LB24640"],
 [57.8793384164, -4.0258778062, "LB24640", "CHURCH STREET FREE CHURCH OF SCOTLAND, CHURCH ROOM (FORMER SCHOOL), BURIAL GROUND AND GATE PIERS WITH FRONT RETAINING WALL", "B", "Wed, 07 Mar 1984", "https://portal.historicenvironment.scot/designation/LB24640"],
 [57.8792042374, -4.0269664959, "LB24640", "CHURCH STREET FREE CHURCH OF SCOTLAND, CHURCH ROOM (FORMER SCHOOL), BURIAL GROUND AND GATE PIERS WITH FRONT RETAINING WALL", "B", "Wed, 07 Mar 1984", "https://portal.historicenvironment.scot/designation/LB24640"],
-[57.8854810185, -4.0198472218, "LB24641", "EARL'S CROSS HOUSE", "B", "Wed, 07 Mar 1984", "https://portal.historicenvironment.scot/designation/LB24641"],
 [57.8808013101, -4.0293501417, "LB24642", "1 GILCHRIST SQUARE", "B", "Wed, 07 Mar 1984", "https://portal.historicenvironment.scot/designation/LB24642"],
 [57.8808826358, -4.029320992, "LB24643", "2, 3, 4, 5 GILCHRIST SQUARE", "B", "Wed, 07 Mar 1984", "https://portal.historicenvironment.scot/designation/LB24643"],
 [57.8809457395, -4.0293076815, "LB24643", "2, 3, 4, 5 GILCHRIST SQUARE", "B", "Wed, 07 Mar 1984", "https://portal.historicenvironment.scot/designation/LB24643"],
