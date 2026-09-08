@@ -41,6 +41,7 @@ import shapefile  # type: ignore[import-untyped]
 from domdf_python_tools.paths import PathPlus
 from domdf_python_tools.typing import PathLike
 from pyproj import CRS, Transformer
+from shapefile import Shape
 
 # this package
 from hes_map import constants
@@ -177,19 +178,10 @@ def download_data(output_directory: PathLike) -> dict[str, Any]:
 			if layer.polygonal:
 				assert shape.shapeTypeName == "POLYGON"
 
-				assert len(shape.points)
-				if crs == "GCS_WGS_1984":
-					polygon = [(lng, lat) for (lng, lat) in shape.points]
-				else:
-					# TODO: flip lat lng and not output
-					polygon = [transform(lat, lng)[::-1] for (lat, lng) in shape.points]
-
-				polygon.append(polygon[0])
-
 				geojson["features"].append({
 						"type": "Feature",
 						"id": feature_properties["ListEntry"],
-						"geometry": {"type": "Polygon", "coordinates": [polygon]},
+						"geometry": {"type": "Polygon", "coordinates": [_prepare_polygon(shape, crs)]},
 						"geometry_name": "geom",
 						"properties": feature_properties,
 						})
@@ -219,6 +211,30 @@ def download_data(output_directory: PathLike) -> dict[str, Any]:
 
 	output_dir.joinpath("meta.json").dump_json(meta, indent=2)
 	return meta
+
+
+def _prepare_polygon(shape: Shape, crs: CRS) -> list[tuple[float, float]]:
+	assert len(shape.points)
+
+	poly_points = []
+
+	for lng, lat in shape.points:
+		if crs != "GCS_WGS_1984":
+			lng, lat = transform(lng, lat)[::-1]
+
+		poly_points.append((
+				_to_10dp(lng),
+				_to_10dp(lat),
+				))
+
+	poly_points.append(poly_points[0])
+
+	return poly_points
+
+
+def _to_10dp(val: float) -> float:
+	as_str = f"{val:.10f}"
+	return float(as_str)
 
 
 class GeoJSON(TypedDict):
