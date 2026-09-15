@@ -665,8 +665,6 @@ var listedBuildings1230385036 = [
 [57.6814444443, -4.0360048393, "LB23534", "2 AND 4 ALLAN STREET", "C", "Tue, 30 Dec 1980", "https://portal.historicenvironment.scot/designation/LB23534"],
 [57.6810506662, -4.0347918662, "LB23535", "BANK STREET, MOUNT EAGLE", "B", "Tue, 30 Dec 1980", "https://portal.historicenvironment.scot/designation/LB23535"],
 [57.6815243473, -4.0355061239, "LB23536", "BANK STREET, ARDYNE", "B", "Tue, 30 Dec 1980", "https://portal.historicenvironment.scot/designation/LB23536"],
-[57.6815580963, -4.0356422027, "LB23537", "BANK STREET, ALLANBANK HOUSE, AND 1 BARKLY STREET", "B", "Tue, 30 Dec 1980", "https://portal.historicenvironment.scot/designation/LB23537"],
-[57.6816301786, -4.035629472, "LB23537", "BANK STREET, ALLANBANK HOUSE, AND 1 BARKLY STREET", "B", "Tue, 30 Dec 1980", "https://portal.historicenvironment.scot/designation/LB23537"],
 [57.6818201115, -4.036109779, "LB23538", "27 BANK STREET, BEACH BRAE", "B", "Tue, 30 Dec 1980", "https://portal.historicenvironment.scot/designation/LB23538"],
 [57.6819351884, -4.0362168751, "LB23539", "29 BANK STREET", "B", "Tue, 30 Dec 1980", "https://portal.historicenvironment.scot/designation/LB23539"],
 [57.6822848084, -4.0368235653, "LB23540", "33 BANK STREET", "C", "Tue, 30 Dec 1980", "https://portal.historicenvironment.scot/designation/LB23540"],

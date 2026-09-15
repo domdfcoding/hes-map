@@ -10674,7 +10674,7 @@ var listedBuildings185270852 = [
 [55.8720305697, -4.8900212542, "LB7269", "SKELMORLIE VILLAGE SKELMORLIE PARISH CHURCH, HALL AND QUADRANT WALL", "B", "Tue, 26 Feb 1980", "https://portal.historicenvironment.scot/designation/LB7269"],
 [55.8723461397, -4.8899807587, "LB7270", "SKELMORLIE VILLAGE SKELMORLIE PARISH CHURCH LAMP NEAR MAIN DOOR", "A", "Tue, 26 Feb 1980", "https://portal.historicenvironment.scot/designation/LB7270"],
 [55.8283738055, -4.8490590604, "LB7271", "WHITTLIEBURN BRIDGE OVER NODDSDALE WATER (ON CONSTABLEWOOD ROAD)", "B", "Thu, 29 Aug 1985", "https://portal.historicenvironment.scot/designation/LB7271"],
-[55.868086409, -4.8891685747, "LB7272", "SKELMORLIE VILLAGE, INCHGOWER HOUSE, 16 SHORE ROAD", "B", "Mon, 04 Jun 1990", "https://portal.historicenvironment.scot/designation/LB7272"],
+[55.8703068938, -4.890308808, "LB7272", "SKELMORLIE VILLAGE, INCHGOWER HOUSE, 16 SHORE ROAD", "B", "Mon, 04 Jun 1990", "https://portal.historicenvironment.scot/designation/LB7272"],
 [55.823522877, -4.8882094617, "LB7273", "KNOCK CASTLE WEST LODGE AND GATEPIERS", "B", "Thu, 29 Aug 1985", "https://portal.historicenvironment.scot/designation/LB7273"],
 [55.8262217851, -4.8823731909, "LB7274", "KNOCK CASTLE STABLE BLOCK AND GATEPIERS", "C", "Thu, 29 Aug 1985", "https://portal.historicenvironment.scot/designation/LB7274"],
 [55.8341543634, -4.8856438209, "LB7275", "MANOR PARK HOTEL", "B", "Thu, 29 Aug 1985", "https://portal.historicenvironment.scot/designation/LB7275"],
