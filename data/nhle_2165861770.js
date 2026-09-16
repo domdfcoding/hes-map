@@ -1337,7 +1337,6 @@ var listedBuildings2165861770 = [
 [54.8095789676, -4.9724399922, "LB46699", "BALGREGGAN, WALLED GARDEN TO FORMER BALGREGGAN HOUSE", "C", "Fri, 28 Jan 2000", "https://portal.historicenvironment.scot/designation/LB46699"],
 [54.8099165652, -4.9766364319, "LB46700", "BALGREGGAN, KENNELS AND BARN TO FORMER BALGREGGAN  HOUSE, INCLUDING BOUNDARY WALLS AND GATEPIERS", "C", "Fri, 28 Jan 2000", "https://portal.historicenvironment.scot/designation/LB46700"],
 [54.8096717682, -4.9763538022, "LB46700", "BALGREGGAN, KENNELS AND BARN TO FORMER BALGREGGAN  HOUSE, INCLUDING BOUNDARY WALLS AND GATEPIERS", "C", "Fri, 28 Jan 2000", "https://portal.historicenvironment.scot/designation/LB46700"],
-[54.7978032941, -4.9694276303, "LB46701", "EAST CAIRNWELL INCLUDING FARMHOUSE, STEADING, BOUNDARY WALLS, GATES AND GATEPIERS", "C", "Fri, 28 Jan 2000", "https://portal.historicenvironment.scot/designation/LB46701"],
 [54.7966769189, -4.9618136317, "LB46702", "LAKE COTTAGE INCLUDING BOUNDARY WALLS, GATEPIERS AND OUTHOUSE", "C", "Fri, 28 Jan 2000", "https://portal.historicenvironment.scot/designation/LB46702"],
 [54.8415149365, -4.9891985423, "LB46703", "MAINS OF CALDONS FARMHOUSE", "C", "Fri, 28 Jan 2000", "https://portal.historicenvironment.scot/designation/LB46703"],
 [54.7850866342, -4.9915338041, "LB46704", "RINGUINEA MOSS", "C", "Fri, 28 Jan 2000", "https://portal.historicenvironment.scot/designation/LB46704"],
