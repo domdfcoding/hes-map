@@ -2727,7 +2727,7 @@ var listedBuildings114607204 = [
 [56.4571038188, -3.1749449039, "LB11758", "BURNSIDE, BALEDGARNO.", "B", "Tue, 05 Oct 1971", "https://portal.historicenvironment.scot/designation/LB11758"],
 [56.4602794067, -3.1764223669, "LB11759", "CASTLEHILL, BALEDGARNO.", "B", "Tue, 05 Oct 1971", "https://portal.historicenvironment.scot/designation/LB11759"],
 [56.455817244, -3.1883405174, "LB11760", "BALLINDEAN HOUSE", "A", "Tue, 05 Oct 1971", "https://portal.historicenvironment.scot/designation/LB11760"],
-[56.4509511035, -3.1889024361, "LB11761", "BALLINDEAN SOUTH LODGE AND GATES,", "B", "Tue, 05 Oct 1971", "https://portal.historicenvironment.scot/designation/LB11761"],
+[56.4508976772, -3.1888520946, "LB11761", "BALLINDEAN SOUTH LODGE AND GATES,", "B", "Tue, 05 Oct 1971", "https://portal.historicenvironment.scot/designation/LB11761"],
 [56.4559743822, -3.1897571165, "LB11762", "BALLINDEAN NURSERY LODGE", "B", "Tue, 05 Oct 1971", "https://portal.historicenvironment.scot/designation/LB11762"],
 [56.4510801517, -3.2025510781, "LB11763", "BALLINDEAN WEST LODGE", "B", "Tue, 05 Oct 1971", "https://portal.historicenvironment.scot/designation/LB11763"],
 [56.4510138363, -3.2038306991, "LB11764", "EASTER BALLINDEAN, FARMHOUSE.", "C", "Tue, 05 Oct 1971", "https://portal.historicenvironment.scot/designation/LB11764"],

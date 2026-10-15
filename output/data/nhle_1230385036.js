@@ -2049,7 +2049,7 @@ var listedBuildings1230385036 = [
 [57.4599812136, -4.4059882336, "LB7821", "REELIG HOUSE AND WALLED GARDEN", "B", "Tue, 05 Oct 1971", "https://portal.historicenvironment.scot/designation/LB7821"],
 [57.4627256377, -4.4119047157, "LB7822", "REELIG HOUSE GATE LODGE AND GATE PIERS", "C", "Thu, 17 Apr 1986", "https://portal.historicenvironment.scot/designation/LB7822"],
 [57.4626856447, -4.4125857398, "LB7823", "REELIG BRIDGE OVER THE MONIACK BURN", "C", "Thu, 17 Apr 1986", "https://portal.historicenvironment.scot/designation/LB7823"],
-[57.5163217589, -4.2936417785, "LB7824", "BIRCHWOOD, LENTRAN MUIR OF ORD GREENHOUSE", "C", "Wed, 31 Aug 1983", "https://portal.historicenvironment.scot/designation/LB7824"],
+[57.473186093, -4.2993430372, "LB7824", "BIRCHWOOD, LENTRAN MUIR OF ORD GREENHOUSE", "C", "Wed, 31 Aug 1983", "https://portal.historicenvironment.scot/designation/LB7824"],
 [57.6004750304, -4.5215858491, "LB7825", "BEECHWOOD HOUSE AND STEADING", "B", "Wed, 31 Aug 1983", "https://portal.historicenvironment.scot/designation/LB7825"],
 [57.6008479903, -4.5209086681, "LB7825", "BEECHWOOD HOUSE AND STEADING", "B", "Wed, 31 Aug 1983", "https://portal.historicenvironment.scot/designation/LB7825"],
 [57.600381623, -4.5217634998, "LB7825", "BEECHWOOD HOUSE AND STEADING", "B", "Wed, 31 Aug 1983", "https://portal.historicenvironment.scot/designation/LB7825"],
