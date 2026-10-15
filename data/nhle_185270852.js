@@ -1897,6 +1897,7 @@ var listedBuildings185270852 = [
 [55.9104402366, -4.330642289, "LB19256", "SWITCHBACK ROAD, CANNIESBURN HOSPITAL, ORIGINAL HOSPITAL BLOCKS, LODGE AND PAIR HOUSEBLOCKS", "B", "Mon, 22 Mar 1993", "https://portal.historicenvironment.scot/designation/LB19256"],
 [55.9102878202, -4.3296730626, "LB19256", "SWITCHBACK ROAD, CANNIESBURN HOSPITAL, ORIGINAL HOSPITAL BLOCKS, LODGE AND PAIR HOUSEBLOCKS", "B", "Mon, 22 Mar 1993", "https://portal.historicenvironment.scot/designation/LB19256"],
 [55.9087847851, -4.3259827435, "LB19256", "SWITCHBACK ROAD, CANNIESBURN HOSPITAL, ORIGINAL HOSPITAL BLOCKS, LODGE AND PAIR HOUSEBLOCKS", "B", "Mon, 22 Mar 1993", "https://portal.historicenvironment.scot/designation/LB19256"],
+[55.9103451093, -4.3318686832, "LB19256", "SWITCHBACK ROAD, CANNIESBURN HOSPITAL, ORIGINAL HOSPITAL BLOCKS, LODGE AND PAIR HOUSEBLOCKS", "B", "Mon, 22 Mar 1993", "https://portal.historicenvironment.scot/designation/LB19256"],
 [55.5147572541, -4.2427679996, "LB19258", "NETHERSHIELD FARMHOUSE AND STEADING", "B", "Fri, 19 Mar 1993", "https://portal.historicenvironment.scot/designation/LB19258"],
 [55.4971334413, -4.4027734447, "LB19259", "OLD BARSKIMMING, WALLED GARDEN", "C", "Fri, 19 Mar 1993", "https://portal.historicenvironment.scot/designation/LB19259"],
 [55.4960080605, -4.404240694, "LB19262", "OLD BARSKIMMING", "B", "Fri, 19 Mar 1993", "https://portal.historicenvironment.scot/designation/LB19262"],
