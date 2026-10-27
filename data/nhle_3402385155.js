@@ -1,4 +1,4 @@
-// Lat: 57 — -4, Lng: 58 — -3,
+// Lat: 57 — 58, Lng: -4 — -3,
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
 var battlefields3402385155 = [
 [57.3352079688, -3.5128611604, "BTL20", "Battle of Cromdale", null, "Wed, 30 Nov 2011", "https://portal.historicenvironment.scot/designation/BTL20", null,

@@ -1,4 +1,4 @@
-// Lat: 58 — -5, Lng: 59 — -4,
+// Lat: 58 — 59, Lng: -5 — -4,
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
 var battlefields2018610261 = [
 ]

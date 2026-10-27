@@ -1,4 +1,4 @@
-// Lat: 54 — -4, Lng: 55 — -3,
+// Lat: 54 — 55, Lng: -4 — -3,
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
 var battlefields2868999231 = [
 [54.9856355059, -3.0782953973, "BTL40", "Battle of Sark", null, "Wed, 03 Aug 2016", "https://portal.historicenvironment.scot/designation/BTL40", null,

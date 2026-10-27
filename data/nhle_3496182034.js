@@ -1,4 +1,4 @@
-// Lat: 57 — -6, Lng: 58 — -5,
+// Lat: 57 — 58, Lng: -6 — -5,
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
 var battlefields3496182034 = [
 [57.1686427412, -5.3143362229, "BTL10", "Battle of Glenshiel", null, "Mon, 21 Mar 2011", "https://portal.historicenvironment.scot/designation/BTL10", null,

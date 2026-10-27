@@ -1,4 +1,4 @@
-// Lat: 55 — -5, Lng: 56 — -4,
+// Lat: 55 — 56, Lng: -5 — -4,
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
 var battlefields185270852 = [
 [55.9834059914, -4.0117934923, "BTL13", "Battle of Kilsyth", null, "Mon, 21 Mar 2011", "https://portal.historicenvironment.scot/designation/BTL13", null,
