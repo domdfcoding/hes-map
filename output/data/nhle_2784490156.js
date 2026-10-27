@@ -1,4 +1,4 @@
-// Lat: 55 — -4, Lng: 56 — -3,
+// Lat: 55 — 56, Lng: -4 — -3,
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
 var battlefields2784490156 = [
 [55.9320974611, -3.0324048229, "BTL15", "Battle of Pinkie", null, "Mon, 21 Mar 2011", "https://portal.historicenvironment.scot/designation/BTL15", null,
@@ -1387,7 +1387,7 @@ var listedBuildings2784490156 = [
 [55.9344530582, -3.5064297841, "LB14236", "UPHALL OLD MANSE, ECCLESMACHAN RD.", "C", "Wed, 25 Jun 1980", "https://portal.historicenvironment.scot/designation/LB14236"],
 [55.9332084747, -3.5075340435, "LB14237", "25 AND 27, 29 ECCLESMACHAN ROAD UPPER UPHALL", "C", "Mon, 18 Dec 1978", "https://portal.historicenvironment.scot/designation/LB14237"],
 [55.9333791262, -3.5075406723, "LB14237", "25 AND 27, 29 ECCLESMACHAN ROAD UPPER UPHALL", "C", "Mon, 18 Dec 1978", "https://portal.historicenvironment.scot/designation/LB14237"],
-[55.9347668061, -3.5072263817, "LB14238", "47 ECCLESMACHAN ROAD UPPER UPHALL", "C", "Mon, 18 Dec 1978", "https://portal.historicenvironment.scot/designation/LB14238"],
+[55.9347668061, -3.5072263817, "LB14238", "41 Ecclesmachan Road, Upper Uphall, Broxburn", "C", "Mon, 18 Dec 1978", "https://portal.historicenvironment.scot/designation/LB14238"],
 [55.9310507211, -3.5076263107, "LB14239", "CROSSGREEN FARM 26 ECCLESMACHAN ROAD UPHALL", "C", "Mon, 18 Dec 1978", "https://portal.historicenvironment.scot/designation/LB14239"],
 [55.589607171, -3.5505349167, "LB1424", "NOS. 1/10 THE VILLAGE", "B", "Tue, 12 Jan 1971", "https://portal.historicenvironment.scot/designation/LB1424"],
 [55.5898117504, -3.5507016641, "LB1424", "NOS. 1/10 THE VILLAGE", "B", "Tue, 12 Jan 1971", "https://portal.historicenvironment.scot/designation/LB1424"],

@@ -1,4 +1,4 @@
-// Lat: 56 — -6, Lng: 57 — -5,
+// Lat: 56 — 57, Lng: -6 — -5,
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
 var battlefields3785984960 = [
 [56.831673541, -5.0733534435, "BTL24", "Battle of Inverlochy Ii", null, "Wed, 30 Nov 2011", "https://portal.historicenvironment.scot/designation/BTL24", null,

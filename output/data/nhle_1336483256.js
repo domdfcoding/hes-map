@@ -1,4 +1,4 @@
-// Lat: 56 — -7, Lng: 57 — -6,
+// Lat: 56 — 57, Lng: -7 — -6,
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
 var battlefields1336483256 = [
 ]
@@ -75,7 +75,7 @@ var listedBuildings1336483256 = [
 [56.4492223257, -6.8937474325, "LB17848", "HYNISH, HARBOUR AND LIGHTHOUSE ESTABLISHMENT, INCLUDING SIGNAL TOWER, HOUSING, SHEDS/STORES, DAM AND WALLED ENCLOSURES", "A", "Tue, 20 Jul 1971", "https://portal.historicenvironment.scot/designation/LB17848"],
 [56.5099713856, -6.9469393794, "LB17850", "7 BALEVULLIN (CAMERON)", "B", "Mon, 26 Jan 1981", "https://portal.historicenvironment.scot/designation/LB17850"],
 [56.519308113, -6.957354638, "LB17851", "BALEVULLIN CREAG CHROM", "B", "Mon, 26 Jan 1981", "https://portal.historicenvironment.scot/designation/LB17851"],
-[56.5167975578, -6.9530875633, "LB17852", "BALEVULLIN COTTAGE OWNED BY FRANCES WALKER", "B", "Mon, 26 Jan 1981", "https://portal.historicenvironment.scot/designation/LB17852"],
+[56.5168135176, -6.9531384747, "LB17852", "An Taigh-tughaidh, Baile a' Mhuilinn, Tiriodh / The Thatched House, Balevullin, Isle of Tiree", "A", "Mon, 26 Jan 1981", "https://portal.historicenvironment.scot/designation/LB17852"],
 [56.4792264135, -6.9577896855, "LB17853", "BARRAPOL CLACHAN DUBH", "B", "Mon, 26 Jan 1981", "https://portal.historicenvironment.scot/designation/LB17853"],
 [56.4707570909, -6.9533670571, "LB17854", "BARRAPOL (HECTOR MCNEILL)", "B", "Mon, 26 Jan 1981", "https://portal.historicenvironment.scot/designation/LB17854"],
 [56.511796443, -6.8857333981, "LB17856", "KENOVAY, (CRAWFORD)", "B", "Mon, 26 Jan 1981", "https://portal.historicenvironment.scot/designation/LB17856"],

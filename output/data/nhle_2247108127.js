@@ -1,4 +1,4 @@
-// Lat: 57 — -3, Lng: 58 — -2,
+// Lat: 57 — 58, Lng: -3 — -2,
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
 var battlefields2247108127 = [
 [57.2351756666, -2.7175041925, "BTL1", "Battle of Alford", null, "Mon, 21 Mar 2011", "https://portal.historicenvironment.scot/designation/BTL1", null,

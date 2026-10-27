@@ -1,4 +1,4 @@
-// Lat: 57 — -5, Lng: 58 — -4,
+// Lat: 57 — 58, Lng: -5 — -4,
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
 var battlefields1230385036 = [
 [57.9150609797, -4.411983377, "BTL19", "Battle of Carbisdale", null, "Wed, 30 Nov 2011", "https://portal.historicenvironment.scot/designation/BTL19", null,
