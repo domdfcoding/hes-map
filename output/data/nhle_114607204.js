@@ -1,4 +1,4 @@
-// Lat: 56 — -4, Lng: 57 — -3,
+// Lat: 56 — 57, Lng: -4 — -3,
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
 var battlefields114607204 = [
 [56.7470275996, -3.7769182412, "BTL12", "Battle of Killiecrankie", null, "Mon, 21 Mar 2011", "https://portal.historicenvironment.scot/designation/BTL12", null,

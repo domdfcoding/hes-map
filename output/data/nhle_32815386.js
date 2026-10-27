@@ -1,4 +1,4 @@
-// Lat: 55 — -3, Lng: 56 — -2,
+// Lat: 55 — 56, Lng: -3 — -2,
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
 var battlefields32815386 = [
 [55.5456826896, -2.8746113772, "BTL14", "Battle of Philiphaugh", null, "Mon, 21 Mar 2011", "https://portal.historicenvironment.scot/designation/BTL14", null,

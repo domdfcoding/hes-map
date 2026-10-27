@@ -1,4 +1,4 @@
-// Lat: 56 — -5, Lng: 57 — -4,
+// Lat: 56 — 57, Lng: -5 — -4,
 // Lat,Lng,Number,Name,Grade,ListDate,Link,Notes?, Polygon Points?,
 var battlefields953405554 = [
 [56.8953047617, -4.8430654793, "BTL26", "Battle of Mulroy", null, "Wed, 30 Nov 2011", "https://portal.historicenvironment.scot/designation/BTL26", null,
