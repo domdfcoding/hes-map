@@ -1824,6 +1824,8 @@ var listedBuildings1230385036 = [
 [57.7533810451, -4.0534613124, "LB52669", "Logie Easter War Memorial, Kildary, Invergordon", "C", "Wed, 07 Jan 2026", "https://portal.historicenvironment.scot/designation/LB52669"],
 [57.7536190509, -4.053743723, "LB52671", "Former Logie Easter Church including boundary wall and gatepiers, Kildary, Invergordon", "C", "Wed, 07 Jan 2026", "https://portal.historicenvironment.scot/designation/LB52671"],
 [57.5411922745, -4.0653175646, "LB52676", "Bellman hangar (Hangar No. 1, former RAF Dalcross), Inverness Airport, Ardersier", "C", "Mon, 11 May 2026", "https://portal.historicenvironment.scot/designation/LB52676"],
+[57.4844745507, -4.463793529, "LB52683", "Beauly Primary School and Schoolhouse (1875 building and the former schoolhouse only), Croyard Road, Beauly, excluding all later additions and all other structures", "C", "Wed, 28 Oct 2026", "https://portal.historicenvironment.scot/designation/LB52683"],
+[57.4842613047, -4.4641295409, "LB52683", "Beauly Primary School and Schoolhouse (1875 building and the former schoolhouse only), Croyard Road, Beauly, excluding all later additions and all other structures", "C", "Wed, 28 Oct 2026", "https://portal.historicenvironment.scot/designation/LB52683"],
 [57.5657118356, -4.1729304374, "LB5275", "AVOCH VILLAGE, 34 DOCK, MAJI COTTAGE", "B", "Thu, 30 Jan 1992", "https://portal.historicenvironment.scot/designation/LB5275"],
 [57.3112418604, -4.330799469, "LB534", "ABERSKY, OLD FARMHOUSE", "B", "Thu, 17 Apr 1986", "https://portal.historicenvironment.scot/designation/LB534"],
 [57.4037191572, -4.3295969798, "LB535", "ALDOURIE CASTLE", "A", "Tue, 05 Oct 1971", "https://portal.historicenvironment.scot/designation/LB535"],
