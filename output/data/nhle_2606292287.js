@@ -948,8 +948,6 @@ var listedBuildings2606292287 = [
 [58.2763695638, -3.384659498, "LB7981", "LATHERON WHEEL (JANETS TOWN) MELBOURNE", "C", "Wed, 15 Aug 1979", "https://portal.historicenvironment.scot/designation/LB7981"],
 [58.2764638983, -3.3850724083, "LB7982", "LATHERON WHEEL (JANETSTOWN) CRAIGLEA", "C", "Wed, 15 Aug 1979", "https://portal.historicenvironment.scot/designation/LB7982"],
 [58.2764957495, -3.385448778, "LB7983", "LATHERONWHEEL (JANETSTOWN) BARN/STORE IMMEDIATELY WEST OF CRAIGLEA", "B", "Wed, 28 Nov 1984", "https://portal.historicenvironment.scot/designation/LB7983"],
-[58.2727811188, -3.3792511776, "LB7984", "LATHERONWHEEL, (JANETSTOWN) COOPER'S BUILDINGS", "B", "Wed, 28 Nov 1984", "https://portal.historicenvironment.scot/designation/LB7984"],
-[58.272834256, -3.3793214411, "LB7984", "LATHERONWHEEL, (JANETSTOWN) COOPER'S BUILDINGS", "B", "Wed, 28 Nov 1984", "https://portal.historicenvironment.scot/designation/LB7984"],
 [58.2786511391, -3.3896255035, "LB7985", "LATHERONWHEEL BRIDGE OVER BURN OF LATHERONWHEEL (ON A9 ROAD)", "B", "Tue, 13 Apr 1971", "https://portal.historicenvironment.scot/designation/LB7985"],
 [58.2710335277, -3.3830362097, "LB7986", "LATHERONWHEEL (JANETSTOWN) HARBOUR BRIDGE OVER BURN OF LATHERONWHEEL", "C", "Tue, 13 Apr 1971", "https://portal.historicenvironment.scot/designation/LB7986"],
 [58.3018472333, -3.2845211914, "LB7995", "LYBSTER MAIN STREET (GREY PLACE) (EAST SIDE) DWELLING AND SHOP D MUNRO", "C", "Wed, 28 Nov 1984", "https://portal.historicenvironment.scot/designation/LB7995"],
