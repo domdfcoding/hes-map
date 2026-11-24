@@ -10592,6 +10592,8 @@ var listedBuildings185270852 = [
 [55.6115837506, -4.4956970555, "LB52674", "Former Clydesdale Bank, excluding interior, 30 Foregate, Kilmarnock", "C", "Wed, 25 Mar 2026", "https://portal.historicenvironment.scot/designation/LB52674"],
 [55.7391173517, -4.2745503342, "LB5268", "11-12 & 14 MONTGOMERY STREET", "B", "Wed, 27 Jul 1960", "https://portal.historicenvironment.scot/designation/LB5268"],
 [55.8662380914, -4.1562417337, "LB52680", "Cranhill Water Tower excluding the Neptune Project sculptures at base, Skerryvore Road, Glasgow", "B", "Wed, 02 Sep 2026", "https://portal.historicenvironment.scot/designation/LB52680"],
+[55.8729186398, -4.2889080218, "LB52689", "Hunterian Art Gallery and Mackintosh House, Hillhead Street, Glasgow", "A", "Tue, 17 Nov 2026", "https://portal.historicenvironment.scot/designation/LB52689"],
+[55.8730653185, -4.2892363713, "LB52689", "Hunterian Art Gallery and Mackintosh House, Hillhead Street, Glasgow", "A", "Tue, 17 Nov 2026", "https://portal.historicenvironment.scot/designation/LB52689"],
 [55.7390781974, -4.2747232955, "LB5269", "16, 17, 18, 19 MONTGOMERY STREET", "B", "Wed, 27 Jul 1960", "https://portal.historicenvironment.scot/designation/LB5269"],
 [55.7390416959, -4.2747530329, "LB5269", "16, 17, 18, 19 MONTGOMERY STREET", "B", "Wed, 27 Jul 1960", "https://portal.historicenvironment.scot/designation/LB5269"],
 [55.7389675138, -4.2748761624, "LB5270", "'PILLAR HOUSE' 20 MONTGOMERY STREET", "B", "Wed, 27 Jul 1960", "https://portal.historicenvironment.scot/designation/LB5270"],
